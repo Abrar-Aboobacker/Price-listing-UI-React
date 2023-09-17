@@ -22,10 +22,11 @@ const Sidebar = () => {
           cursor: "pointer",
           transition: "background-color 0.3s, box-shadow 0.3s",
           "&:hover": {
-            boxShadow: "-3px -1px 15px rgba(0, 0, 0, 0.8)",
+            boxShadow: "-3px -1px 15px rgba(0, 0, 0, 0.5)",
           },
         }}
       >
+        
         <Box sx={{ pt: 2 }}>
           <Avatar sx={{ height: "60px", width: "60px", mx: 5 }} src={profile} />
         </Box>
@@ -47,14 +48,13 @@ const Sidebar = () => {
         <Typography sx={{ fontSize: "12px", textAlign: "center" }}>
           abrar@gmail.com
         </Typography>
-      </Box>
-      <Box
+        <Box
         sx={{
-            height:  '58.9vh',
+            height:  '53vh',
           width: 160,
           background: "white",
-          mt: "5px",
-          pt:1.5,
+          mt: "45px",
+          pt:3,
           boxShadow: "0px 6px 10px rgba(0, 0, 0, 0.4)",
         }}
       >
@@ -64,9 +64,11 @@ const Sidebar = () => {
      <Sidebarlist  icon={<QuestionAnswerRoundedIcon />} name='FAQ'/>
      <Sidebarlist  icon={<ContactSupportRoundedIcon />} name='Support'/>
      <Box sx={{width:'100%',background:'#e3f5fa'}}>
-        <Typography sx={{display:'flex',alignItems:'center',textAlign:'center',color:'blue',fontWeight:600,mx:5,mt:9.9,cursor:'pointer'}}>Logout <PowerSettingsNewIcon sx={{fontSize:18,ml:1}}/></Typography>
+        <Typography sx={{display:'flex',alignItems:'center',textAlign:'center',color:'blue',fontWeight:600,mx:5,mt:5,cursor:'pointer'}}>Logout <PowerSettingsNewIcon sx={{fontSize:18,ml:1}}/></Typography>
      </Box>
       </Box>
+      </Box>
+      
     </>
   );
 };
