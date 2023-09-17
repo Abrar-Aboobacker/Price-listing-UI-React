@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+/* .triangle {
+  padding: 150px 0;
+  height: inherit;
+  width: 50%;
+  background: #0F6BD0;
+  display: block;
+  clip-path: polygon(0% 0%, 90% 0%, 40% 100%, 0% 100%);
+  z-index: 9;
+  position: absolute;
+} */
