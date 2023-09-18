@@ -45,7 +45,7 @@ const Navbar = () => {
               height: "50px",
               background: "white",
               marginTop: 3,
-              marginRight: 20,
+              marginRight: 10,
               boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
               borderRadius: 1,
               cursor: "pointer",
@@ -55,6 +55,7 @@ const Navbar = () => {
           </Box>
         </Box>
       </Box>
+      
     </>
   );
 };

@@ -1,7 +1,11 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
 import Plancard from "./Plancard";
-
+import PlanCard2 from "./PlanCard2";
+import PersonIcon from "@mui/icons-material/Person";
+import CloudUploadIcon from "@mui/icons-material/CloudUpload";
+import EmailIcon from "@mui/icons-material/Email";
+import DoneAllIcon from "@mui/icons-material/DoneAll";
 const Main = () => {
   return (
     <>
@@ -19,6 +23,7 @@ const Main = () => {
             width: 200,
             height: 30,
             mt: -12,
+            mr: -22,
             borderRadius: 10,
           }}
         >
@@ -52,6 +57,7 @@ const Main = () => {
           </Typography>
         </Box>
       </Box>
+
       <Box
         sx={{
           ml: 20,
@@ -90,6 +96,46 @@ const Main = () => {
           users="75"
           storage="100"
           support="Email+chat+Whatsapp Support"
+        />
+      </Box>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          flexWrap: "wrap",
+          gap: 3,
+          mt: 3,
+          ml: 20,
+        }}
+      >
+        <PlanCard2
+          card="Free Forever"
+          heading="Free Starter"
+          content="The quickest and easiest way to try Protocols with basic
+                  functionalities"
+          ButtonContent="Get Started"
+          backgroundColor="#abf5a2"
+          users="Upto 8 Users"
+          storage=" Upto 3gb Storage"
+          emailSupport="Email Support"
+          discription="Basic of Documents,Task Flow
+          voting,Accounting,Banking,Notes,
+          Investor,Director and Tean Management included"
+          person={<PersonIcon />}
+          cloud={<CloudUploadIcon />}
+          email={<EmailIcon />}
+          tick={<DoneAllIcon />}
+        />
+        <PlanCard2
+          card="Let's Connect"
+          heading="Enterprise Plan"
+          content="Effortlessly customize and fine-tune services as your needs shift,ensuring the perfect tools for success"
+          ButtonContent="Contact Us"
+          backgroundColor="#a9d3fc"
+          users="More than 75 Users"
+          discription="Customization of all other features"
+          person={<PersonIcon />}
+          tick={<DoneAllIcon />}
         />
         
       </Box>

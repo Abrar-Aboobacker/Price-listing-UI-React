@@ -58,11 +58,11 @@ const Sidebar = () => {
           boxShadow: "0px 6px 10px rgba(0, 0, 0, 0.4)",
         }}
       >
-     <Sidebarlist backgroundColor="#a9d3fc" icon={<DashboardIcon />} name='Dashboard'/>
-     <Sidebarlist  icon={<GrassIcon />} name='Perks'/>
-     <Sidebarlist  icon={<ExtensionIcon />} name='Addons'/>
-     <Sidebarlist  icon={<QuestionAnswerRoundedIcon />} name='FAQ'/>
-     <Sidebarlist  icon={<ContactSupportRoundedIcon />} name='Support'/>
+     <Sidebarlist backgroundColor="#a9d3fc" icon={<DashboardIcon />} name='Dashboard' shadow="4px 4px 9px rgba(0, 0, 0, 0.2)"/>
+     <Sidebarlist  icon={<GrassIcon />} name='Perks' border="1px solid #e3e3e3"/>
+     <Sidebarlist  icon={<ExtensionIcon />} name='Addons' border="1px solid #e3e3e3"/>
+     <Sidebarlist  icon={<QuestionAnswerRoundedIcon />} name='FAQ' border="1px solid #e3e3e3"/>
+     <Sidebarlist  icon={<ContactSupportRoundedIcon />} name='Support' border="1px solid #e3e3e3"/>
      <Box sx={{width:'100%',background:'#e3f5fa'}}>
         <Typography sx={{display:'flex',alignItems:'center',textAlign:'center',color:'blue',fontWeight:600,mx:5,mt:5,cursor:'pointer'}}>Logout <PowerSettingsNewIcon sx={{fontSize:18,ml:1}}/></Typography>
      </Box>

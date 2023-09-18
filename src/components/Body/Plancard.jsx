@@ -14,7 +14,7 @@ import MailIcon from "@mui/icons-material/Mail";
 const Plancard = ({name,og,off,backgroundColor,color,users,storage,support}) => {
   return (
     <>
-      <Card elevation={5} sx={{ width: { xs: "95%" }, maxWidth: 330 }}>
+      <Card elevation={5} sx={{ width: { xs: "95%" }, maxWidth: 360 }}>
         <CardContent>
           <Box>
             <Typography variant="h5" sx={{ fontWeight: 600, fontSize: 30 }}>
