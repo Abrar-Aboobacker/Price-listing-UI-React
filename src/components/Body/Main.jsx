@@ -10,11 +10,25 @@ const Main = () => {
   return (
     <>
       <Box
-        sx={{ display:{ xs:'block',sm:"flex"}, justifyContent: "space-between", width: {xs:'100%',sm:"80%"} }}
+        sx={{
+          display: { xs: "block", sm: "block", md: "flex" },
+          justifyContent: "space-between",
+          width: { xs: "100%", sm: "65%" },
+        }}
       >
-        <Typography sx={{ mt: {xs:0,sm:-15}, ml: {xs:'12%',sm:30}, fontWeight: 600, fontSize: {xs:15,sm:20},pt:{xs:2,sm:0} }}>
+        <Typography
+          sx={{
+            mt: { xs: 0, sm: -15, md: -15 },
+            ml: { xs: "9%", sm: "38%", md: "30%" },
+            fontWeight: 600,
+            fontSize: { xs: 13, sm: 15, md: 20 },
+            pt: { xs: 2, sm: 0 },
+            whiteSpace: "nowrap",
+          }}
+        >
           Choose a plan that's just right for you !
         </Typography>
+
         <Box
           sx={{
             display: "flex",
@@ -22,10 +36,12 @@ const Main = () => {
             border: "1px solid grey",
             width: 200,
             height: 30,
-            mt: {xs:3,sm:-12},
-            mr: {xs:0,sm:-22},
-            ml:{xs:'10%',sm:0},
+            mt: { xs: 3, sm: 2, md: -12 },
+            mr: { xs: 0, sm: -22 },
+            ml: { xs: "10%", sm: "80%", md: "20%", lg: "50%" },
             borderRadius: 10,
+            mb: { xs: 0, sm: 2, md: 0 },
+            cursor: "pointer",
           }}
         >
           <Box
@@ -37,6 +53,11 @@ const Main = () => {
               mt: 0.3,
               ml: 1,
               borderRadius: 10,
+              transition: "0.3s",
+              ":hover": {
+                background: "#246cf2",
+                color: "white",
+              },
             }}
           >
             <Typography>Monthly</Typography>
@@ -61,12 +82,12 @@ const Main = () => {
 
       <Box
         sx={{
-          ml: {xs:0,sm:20},
+          ml: { xs: 0, sm: 20 },
           display: "flex",
           justifyContent: "center",
           flexWrap: "wrap",
           gap: 3,
-          mt:{xs:2,sm:0}
+          mt: { xs: 2, sm: 0 },
         }}
       >
         <Plancard
@@ -107,7 +128,7 @@ const Main = () => {
           flexWrap: "wrap",
           gap: 3,
           mt: 3,
-          ml:{ xs:0,sm:20},
+          ml: { xs: 0, sm: 20 },
         }}
       >
         <PlanCard2
@@ -139,10 +160,17 @@ const Main = () => {
           person={<PersonIcon />}
           tick={<DoneAllIcon />}
         />
-        
       </Box>
-      <Typography sx={{textAlign:'end',color:'#2998f2',mr:2}}>
-        *some unique features are provided as add-one with individual plans for each features
+      <Typography
+        sx={{
+          textAlign: { xs: "start", sm: "end" },
+          color: "#2998f2",
+          mr: { xs: 0, sm: 2 },
+          ml: { xs: 2, sm: 0 },
+        }}
+      >
+        *some unique features are provided as add-one with individual plans for
+        each features
       </Typography>
     </>
   );

@@ -1,16 +1,19 @@
-import {
-  Box,
-  Button,
-  Card,
-  CardContent,
-  Typography,
-} from "@mui/material";
+import { Box, Button, Card, CardContent, Typography } from "@mui/material";
 import React from "react";
 import TrendingFlatIcon from "@mui/icons-material/TrendingFlat";
 import PersonIcon from "@mui/icons-material/Person";
 import CloudUploadIcon from "@mui/icons-material/CloudUpload";
 import MailIcon from "@mui/icons-material/Mail";
-const Plancard = ({name,og,off,backgroundColor,color,users,storage,support}) => {
+const Plancard = ({
+  name,
+  og,
+  off,
+  backgroundColor,
+  color,
+  users,
+  storage,
+  support,
+}) => {
   return (
     <>
       <Card elevation={5} sx={{ width: { xs: "95%" }, maxWidth: 360 }}>
@@ -33,7 +36,13 @@ const Plancard = ({name,og,off,backgroundColor,color,users,storage,support}) => 
           >
             {off}
           </Typography>
-          <Button sx={{backgroundColor: backgroundColor ,":hover":{color:color,background:'white'} }} variant="contained">
+          <Button
+            sx={{
+              backgroundColor: backgroundColor,
+              ":hover": { color: color, background: "white" },
+            }}
+            variant="contained"
+          >
             Get Started <TrendingFlatIcon sx={{ ml: 1 }} />
           </Button>
 

@@ -1,12 +1,12 @@
-import React from 'react'
-import './App.css';
-import PriceListing from './Page/PriceListing';
+import React from "react";
+import "./App.css";
+import PriceListing from "./Page/PriceListing";
 const App = () => {
   return (
     <>
-   <PriceListing/>
+      <PriceListing />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
