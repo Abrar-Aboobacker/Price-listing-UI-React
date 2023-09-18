@@ -139,6 +139,9 @@ const Main = () => {
         />
         
       </Box>
+      <Typography sx={{textAlign:'end',color:'#2998f2',mr:2}}>
+        *some unique features are provided as add-one with individual plans for each features
+      </Typography>
     </>
   );
 };

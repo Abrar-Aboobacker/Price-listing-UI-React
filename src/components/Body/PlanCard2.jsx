@@ -74,7 +74,6 @@ const PlanCard2 = ({
                   display: "flex",
                   alignItems: "start",
                   fontSize: 15,
-                  mb: 1,
                 }}
               >
                 {tick}
