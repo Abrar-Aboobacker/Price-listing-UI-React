@@ -14,6 +14,7 @@ const Sidebar = () => {
     <>
       <Box
         sx={{
+          display:{xs:'none',sm:'block'},
           height: 160,
           width: 160,
           background: "white",
@@ -32,7 +33,7 @@ const Sidebar = () => {
         </Box>
         <Typography
           sx={{
-            display: "flex",
+            display: {xs:'none',sm:'flex'},
             alignItems: "center",
             fontSize: "13px",
             fontWeight: 600,

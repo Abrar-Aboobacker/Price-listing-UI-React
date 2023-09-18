@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar/Navbar";
-import { Box, Typography } from "@mui/material";
+import { Box} from "@mui/material";
 import Sidebar from "../components/Body/Sidebar";
 import Main from "../components/Body/Main";
 
@@ -11,8 +11,8 @@ const PriceListing = () => {
       <Box
         sx={{
           background: "white",
-          height: "143vh",
-          width:'98%',
+          height: {xs:"385vh",sm:"143vh"},
+          width:{xs:'145%',sm:'98%'},
           boxShadow: "0px -2px 5px rgba(0, 0, 0, 0.1)",
         }}
       >

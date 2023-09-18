@@ -10,9 +10,9 @@ const Main = () => {
   return (
     <>
       <Box
-        sx={{ display: "flex", justifyContent: "space-between", width: "80%" }}
+        sx={{ display:{ xs:'block',sm:"flex"}, justifyContent: "space-between", width: {xs:'100%',sm:"80%"} }}
       >
-        <Typography sx={{ mt: -15, ml: 30, fontWeight: 600, fontSize: 20 }}>
+        <Typography sx={{ mt: {xs:0,sm:-15}, ml: {xs:'12%',sm:30}, fontWeight: 600, fontSize: {xs:15,sm:20},pt:{xs:2,sm:0} }}>
           Choose a plan that's just right for you !
         </Typography>
         <Box
@@ -22,8 +22,9 @@ const Main = () => {
             border: "1px solid grey",
             width: 200,
             height: 30,
-            mt: -12,
-            mr: -22,
+            mt: {xs:3,sm:-12},
+            mr: {xs:0,sm:-22},
+            ml:{xs:'10%',sm:0},
             borderRadius: 10,
           }}
         >
@@ -60,11 +61,12 @@ const Main = () => {
 
       <Box
         sx={{
-          ml: 20,
+          ml: {xs:0,sm:20},
           display: "flex",
           justifyContent: "center",
           flexWrap: "wrap",
           gap: 3,
+          mt:{xs:2,sm:0}
         }}
       >
         <Plancard
@@ -105,7 +107,7 @@ const Main = () => {
           flexWrap: "wrap",
           gap: 3,
           mt: 3,
-          ml: 20,
+          ml:{ xs:0,sm:20},
         }}
       >
         <PlanCard2

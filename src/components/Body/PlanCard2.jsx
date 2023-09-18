@@ -52,7 +52,7 @@ const PlanCard2 = ({
                 {ButtonContent} <TrendingFlatIcon sx={{ ml: 1 }} />
               </Button>
             </Box>
-            <Box sx={{ width: "50%" }}>
+            <Box sx={{ width: "50%",ml:2 }}>
               <Typography sx={{ mb: 2 }}>What you'll get:</Typography>
               <Typography sx={{ display: "flex", alignItems: "center", mb: 1 }}>
                 {person}
@@ -73,7 +73,7 @@ const PlanCard2 = ({
                 sx={{
                   display: "flex",
                   alignItems: "start",
-                  fontSize: 15,
+                  fontSize: {xs:9,sm:20},
                 }}
               >
                 {tick}
